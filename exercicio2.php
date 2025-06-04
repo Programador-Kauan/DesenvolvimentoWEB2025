@@ -1,6 +1,14 @@
 <?php
+
 $nome = $_GET ['nm'];
-echo $nome."<br>";
+if(strlen($nome) < 20)
+{
+    echo "o nome tem que ter mais de 20 carecteres";
+}
+else
+{
+    echo $nome."<br>";
+}
 $textarea = $_GET ['recado'];
 echo $textarea."<br>";
 $genero = $_GET ['genero'];
